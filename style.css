@@ -1,11 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Source+Sans+3:wght@200&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gasoek+One&family=Oswald:wght@200;300;400&family=Raleway:wght@500&family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root {
+    --corw:white;
+    --corp:black;
+    --cor1:#1c31a5;
+    --cor2:#101f78;
+    --cor3:#020f59;
+    --cor4:#010937;
+    --cor5:#000524;
+    --cor6:#2e5dc0;
+    --cor7:#4b74d0;
+    --cor8:#678be0;
+    --cor9:#84a2ef;
+    --cor10:#a0b9ff;
+    
+    --fonte-padrão:'Source Sans 3', sans-serif;
+    --fonte-destaque:'Jost', sans-serif;
+    --fonte-título:'Valera Round', sans-serif;
+    --font-Bebas:'Bebas Neue', sans-serif;
+    --font-robot:'Roboto Condensed', sans-serif;
+    --font-fjalla:'Fjalla One', sans-serif;
+}
+
 /* CSS reset */
 *, *:before, *:after { 
     margin:0;
     padding:0;
-    font-family: Arial,sans-serif;
+    font-family: var(--fonte-destaque);
   }
   
   body{
+    background-image: linear-gradient( to right, #2e5dc0, #020f59);
     margin:10px;
   }
   
@@ -28,21 +59,12 @@
   /* formatando o cabeçalho dos formulários */
   h1{
     font-size: 48px;
-    color: #066a75;
+    color: var(--cor7);
     padding: 10px 0;
-    font-family: Arial,sans-serif;
+    font-family: var(--font-robot);
     font-weight: bold;
     text-align: center;
     padding-bottom: 30px;
-  }
-  h1:after{
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin-top: 10px;
-    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
-    background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
   }
   
   p{
@@ -52,19 +74,19 @@
     margin: 0px;
   }
   label{
-    color: #405c60;
+    color: var(--cor6);
     position: relative;
   }
   
   /**** advanced input styling ****/
   /* placeholder */
   ::-webkit-input-placeholder  {
-    color: #bebcbc; 
+    color: var(--cor10); 
     font-style: italic;
   }
   input:-moz-placeholder,
   textarea:-moz-placeholder{
-    color: #bebcbc;
+    color: var(--cor10);
     font-style: italic;
   } 
   input {
@@ -75,7 +97,7 @@
     width: 95%;
     margin-top: 4px;
     padding: 10px;  
-    border: 1px solid #b2b2b2;
+    border: 1px solid var(--cor9);
     
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -91,13 +113,12 @@
   input[type="submit"]{
     width: 100%!important;
     cursor: pointer;  
-    background: #3d9db3;
+    background: var(--cor6);
     padding: 8px 5px;
     color: #fff;
     font-size: 20px;  
     border: 1px solid #fff; 
-    margin-bottom: 10px;  
-    text-shadow: 0 1px 1px #333;
+    margin-bottom: 10px; 
     
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -112,7 +133,7 @@
   .link{
     position: absolute;
     background: #e1eaeb;
-    color: #7f7c7c;
+    color: var(--cor4);
     left: 0px;
     height: 20px;
     width: 440px;
@@ -141,7 +162,7 @@
   .link a:hover {
     color: #39bfd7;
     background: #f7f7f7;
-    border: 1px solid #4ab3c6;
+    border: 1px solid var(--cor6);
   }
   
   /* estilos para para ambos os formulários */
